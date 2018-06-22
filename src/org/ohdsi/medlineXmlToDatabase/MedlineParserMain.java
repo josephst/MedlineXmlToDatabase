@@ -49,6 +49,7 @@ public class MedlineParserMain {
 		pmidToDate = new PmidToDate(connectionWrapper);
 
 		XMLFileIterator iterator = new XMLFileIterator(folder);
+		System.out.println("Starting parse");
 		while (iterator.hasNext()) {
 			Document document = iterator.next();
 			analyse(document);

@@ -67,6 +67,7 @@ public class XMLFileIterator implements Iterator<Document> {
 		for (File file : new File(folder).listFiles())
 			if (file.getAbsolutePath().endsWith("xml.gz"))
 				files.add(file);
+		System.out.println("Found " + files.size() + " xml.gz files");
 		files = RandomUtilities.sampleWithoutReplacement(files, sampleSize);
 		Collections.sort(files, new Comparator<File>() {
 			@Override
