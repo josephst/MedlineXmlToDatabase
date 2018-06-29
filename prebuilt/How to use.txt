@@ -1,0 +1,15 @@
+- Download all xml.gz files from MEDLINE (see http://www.nlm.nih.gov/databases/license/license.html for licensing information)
+
+- Create an ini file according to the example in this folder
+
+- From the command prompt, 'run java -Xmx2000m -jar MedlineXmlToDatabase.jar -ini <path to ini file> -analyse' to create the database structure
+
+- From the command prompt, 'run java -Xmx2000m -jar MedlineXmlToDatabase.jar -ini <path to ini file> -parse' to load the data from the xml files into the database
+
+To add MeSH:
+
+- Download the XML gz files (descxxxx.gz and suppxxxx.gz) from NLM (see https://www.nlm.nih.gov/mesh/download_mesh.html)
+
+- Add the path to the gz files to the ini file under MESH_XML_FOLDER
+
+- From the command line, use java -jar MedlineXmlToDatabase.jar -parse_mesh -ini <path to ini file> to load the data from the xml files into the database.
