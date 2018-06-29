@@ -1,4 +1,6 @@
 /bin
 build/
 dist/
-PubmedData/
+*.xml.gz
+*_stats.html
+*.xml.gz.md5
