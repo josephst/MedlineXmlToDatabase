@@ -1,0 +1,30 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug (Launch): Analyze",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "org.ohdsi.medlineXmlToDatabase.MainClass",
+      "projectName": "MedlineXmlToDatabase",
+      "args": "-analyse -ini ${workspaceFolder}/config.ini"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch): Parse",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "org.ohdsi.medlineXmlToDatabase.MainClass",
+      "projectName": "MedlineXmlToDatabase",
+      "args": "-parse -ini ${workspaceFolder}/config.ini"
+    }
+  ]
+}
